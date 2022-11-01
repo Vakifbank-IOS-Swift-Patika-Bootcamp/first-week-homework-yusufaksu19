@@ -47,6 +47,7 @@ func variableCount<T: Hashable>(variables: [T]){
 variableCount(variables: [1,2,2,3,3,3,4,4,4,4,5,0,5,5,5,5,6,6,6,6,6,6,7,7,0,1,0,0])
 variableCount(variables: [1.1,2.2,2.2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6])
 variableCount(variables: ["aa","denemebir", "denemeiki", "denemeiki", "aa", "denemeuc", "denemeuc", "denemeuc","aa"])
+variableCount(variables: [false, true, false, true, true, true])
 
 // 2. Homework NOT FINISHED YET
 

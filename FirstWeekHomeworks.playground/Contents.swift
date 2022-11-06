@@ -163,9 +163,9 @@ func fibonacci(){
 }
 fibonacci()
 
-// 5. Homework -- 2 NOT FINISHED YET
+// 5. Homework -- 2
 print("                                               ")
-print("--------------------------------------------- 5-3 NN")
+print("--------------------------------------------- 5-3")
 print("                                               ")
 
 // 5. Homework -- 3
@@ -175,3 +175,28 @@ print("                                               ")
  What is the largest prime factor of the number 600851475143 ?
 
  */
+
+func largestPrimeFactor(number:Int) -> Int {
+  var factorsArray: [Int] = [0]
+
+  var i = 2
+  var nextNumber: Int = number
+  while nextNumber > 1 {
+    if nextNumber % i == 0 {
+      factorsArray.append(i)
+      nextNumber = Int(nextNumber / i)
+      while nextNumber % i == 0 {
+        nextNumber = Int(nextNumber / i)
+      }
+    }
+    i += 1
+  }
+  return factorsArray.removeLast()
+}
+
+print("Largest Prime Factor: \(largestPrimeFactor(number: 600851475143))")
+
+
+print("                                               ")
+print("-----------------------------------------------")
+print("                                               ")
